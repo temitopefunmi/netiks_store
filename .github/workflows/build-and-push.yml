@@ -113,7 +113,7 @@ jobs:
               ;;
           esac
 
-          IMAGE="${{ vars.ACR_LOGIN_SERVER }}/${{ matrix.service }}"
+          IMAGE="${{ vars.ACR_LOGIN_SERVER }}/netiks-store/${{ matrix.service }}"
 
           docker build \
             -f "$DOCKERFILE" \
