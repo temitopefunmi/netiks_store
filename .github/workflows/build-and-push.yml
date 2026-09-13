@@ -42,6 +42,9 @@ jobs:
       - name: Web lint
         run: npm run lint:web
 
+      - name: Prepare env file
+        run: cp .env.example .env
+
       - name: Validate Docker Compose
         run: docker compose config
 
