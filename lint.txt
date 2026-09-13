@@ -1,0 +1,1143 @@
+
+> netiks-store@0.1.0 lint:web
+> npm run lint --workspace @netiks-store/web
+
+
+> @netiks-store/web@0.1.0 lint
+> eslint
+
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx
+   24:7   error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:24:7
+   22 |
+   23 |     return (
+>  24 |       <main className="min-h-screen bg-[var(--page-wash)] px-4 py-6 md:px-8 md:py-10">
+      |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  25 |         <div className="mx-auto max-w-[88rem] rounded-[2.2rem] bg-[var(--surface)] px-6 py-6 shadow-[0_30px_90px_rgba(88,71,14,0.08)] md:px-10 md:py-8 xl:px-14 xl:py-10">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  26 |           <header className="flex flex-col gap-4 border-b border-[var(--line)] pb-8 md:flex-row md:items-end md:justify-between">
+      …
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 113 |         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 114 |       </main>
+      | ^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  115 |     );
+  116 |   } catch {
+  117 |     notFound();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             react-hooks/error-boundaries
+   25:9   error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:25:9
+   23 |     return (
+   24 |       <main className="min-h-screen bg-[var(--page-wash)] px-4 py-6 md:px-8 md:py-10">
+>  25 |         <div className="mx-auto max-w-[88rem] rounded-[2.2rem] bg-[var(--surface)] px-6 py-6 shadow-[0_30px_90px_rgba(88,71,14,0.08)] md:px-10 md:py-8 xl:px-14 xl:py-10">
+      |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  26 |           <header className="flex flex-col gap-4 border-b border-[var(--line)] pb-8 md:flex-row md:items-end md:justify-between">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  27 |             <div>
+      …
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 112 |           </section>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 113 |         </div>
+      | ^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  114 |       </main>
+  115 |     );
+  116 |   } catch {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            react-hooks/error-boundaries
+   26:11  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:26:11
+  24 |       <main className="min-h-screen bg-[var(--page-wash)] px-4 py-6 md:px-8 md:py-10">
+  25 |         <div className="mx-auto max-w-[88rem] rounded-[2.2rem] bg-[var(--surface)] px-6 py-6 shadow-[0_30px_90px_rgba(88,71,14,0.08)] md:px-10 md:py-8 xl:px-14 xl:py-10">
+> 26 |           <header className="flex flex-col gap-4 border-b border-[var(--line)] pb-8 md:flex-row md:items-end md:justify-between">
+     |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 27 |             <div>
+     | ^^^^^^^^^^^^^^^^^
+> 28 |               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#907314]">Checkout</p>
+     …
+     | ^^^^^^^^^^^^^^^^^
+> 37 |             <SiteNav current="checkout" user={user} />
+     | ^^^^^^^^^^^^^^^^^
+> 38 |           </header>
+     | ^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  39 |
+  40 |           <section className="grid gap-6 py-10 lg:grid-cols-[1.02fr_0.98fr]">
+  41 |             <article className="rounded-[1.6rem] border border-[var(--line)] bg-[#fbfaf7] p-6">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             react-hooks/error-boundaries
+   27:13  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:27:13
+  25 |         <div className="mx-auto max-w-[88rem] rounded-[2.2rem] bg-[var(--surface)] px-6 py-6 shadow-[0_30px_90px_rgba(88,71,14,0.08)] md:px-10 md:py-8 xl:px-14 xl:py-10">
+  26 |           <header className="flex flex-col gap-4 border-b border-[var(--line)] pb-8 md:flex-row md:items-end md:justify-between">
+> 27 |             <div>
+     |             ^^^^^
+> 28 |               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#907314]">Checkout</p>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 29 |               <h1 className="mt-3 max-w-3xl text-[2rem] font-semibold leading-[1.05] tracking-[-0.05em] text-[#141413] md:text-[3rem]">
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 30 |                 Complete a shopper purchase for {product.name}.
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 31 |               </h1>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 32 |               <p className="mt-4 max-w-2xl text-sm leading-7 text-[var(--muted)] md:text-base">
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |                 {query.status ?? "Review your details, confirm your order, and complete checkout in just a few moments."}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 |               </p>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |             </div>
+     | ^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  36 |
+  37 |             <SiteNav current="checkout" user={user} />
+  38 |           </header>                                                                                                                                                                                                                                                                                                                                               react-hooks/error-boundaries
+   28:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:28:15
+  26 |           <header className="flex flex-col gap-4 border-b border-[var(--line)] pb-8 md:flex-row md:items-end md:justify-between">
+  27 |             <div>
+> 28 |               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#907314]">Checkout</p>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  29 |               <h1 className="mt-3 max-w-3xl text-[2rem] font-semibold leading-[1.05] tracking-[-0.05em] text-[#141413] md:text-[3rem]">
+  30 |                 Complete a shopper purchase for {product.name}.
+  31 |               </h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             react-hooks/error-boundaries
+   29:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:29:15
+  27 |             <div>
+  28 |               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#907314]">Checkout</p>
+> 29 |               <h1 className="mt-3 max-w-3xl text-[2rem] font-semibold leading-[1.05] tracking-[-0.05em] text-[#141413] md:text-[3rem]">
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 30 |                 Complete a shopper purchase for {product.name}.
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 31 |               </h1>
+     | ^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  32 |               <p className="mt-4 max-w-2xl text-sm leading-7 text-[var(--muted)] md:text-base">
+  33 |                 {query.status ?? "Review your details, confirm your order, and complete checkout in just a few moments."}
+  34 |               </p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    react-hooks/error-boundaries
+   32:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:32:15
+  30 |                 Complete a shopper purchase for {product.name}.
+  31 |               </h1>
+> 32 |               <p className="mt-4 max-w-2xl text-sm leading-7 text-[var(--muted)] md:text-base">
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |                 {query.status ?? "Review your details, confirm your order, and complete checkout in just a few moments."}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 34 |               </p>
+     | ^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  35 |             </div>
+  36 |
+  37 |             <SiteNav current="checkout" user={user} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react-hooks/error-boundaries
+   37:13  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:37:13
+  35 |             </div>
+  36 |
+> 37 |             <SiteNav current="checkout" user={user} />
+     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  38 |           </header>
+  39 |
+  40 |           <section className="grid gap-6 py-10 lg:grid-cols-[1.02fr_0.98fr]">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react-hooks/error-boundaries
+   40:11  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:40:11
+   38 |           </header>
+   39 |
+>  40 |           <section className="grid gap-6 py-10 lg:grid-cols-[1.02fr_0.98fr]">
+      |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  41 |             <article className="rounded-[1.6rem] border border-[var(--line)] bg-[#fbfaf7] p-6">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  42 |               <h2 className="text-xl font-semibold tracking-[-0.03em] text-[#141413]">Customer details</h2>
+      …
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 111 |             </article>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 112 |           </section>
+      | ^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  113 |         </div>
+  114 |       </main>
+  115 |     );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  react-hooks/error-boundaries
+   41:13  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:41:13
+  39 |
+  40 |           <section className="grid gap-6 py-10 lg:grid-cols-[1.02fr_0.98fr]">
+> 41 |             <article className="rounded-[1.6rem] border border-[var(--line)] bg-[#fbfaf7] p-6">
+     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 42 |               <h2 className="text-xl font-semibold tracking-[-0.03em] text-[#141413]">Customer details</h2>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 43 |               <form action="/checkout/actions" className="mt-6 grid gap-4 md:grid-cols-2" method="post">
+     …
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 77 |               </form>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 78 |             </article>
+     | ^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  79 |
+  80 |             <article className="rounded-[1.6rem] border border-[var(--line)] bg-[#fbfaf7] p-6">
+  81 |               <h2 className="text-xl font-semibold tracking-[-0.03em] text-[#141413]">Order summary</h2>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               react-hooks/error-boundaries
+   42:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:42:15
+  40 |           <section className="grid gap-6 py-10 lg:grid-cols-[1.02fr_0.98fr]">
+  41 |             <article className="rounded-[1.6rem] border border-[var(--line)] bg-[#fbfaf7] p-6">
+> 42 |               <h2 className="text-xl font-semibold tracking-[-0.03em] text-[#141413]">Customer details</h2>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  43 |               <form action="/checkout/actions" className="mt-6 grid gap-4 md:grid-cols-2" method="post">
+  44 |                 <input name="product_id" type="hidden" value={product.id} />
+  45 |                 <input name="slug" type="hidden" value={product.slug} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react-hooks/error-boundaries
+   43:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:43:15
+  41 |             <article className="rounded-[1.6rem] border border-[var(--line)] bg-[#fbfaf7] p-6">
+  42 |               <h2 className="text-xl font-semibold tracking-[-0.03em] text-[#141413]">Customer details</h2>
+> 43 |               <form action="/checkout/actions" className="mt-6 grid gap-4 md:grid-cols-2" method="post">
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 44 |                 <input name="product_id" type="hidden" value={product.id} />
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 45 |                 <input name="slug" type="hidden" value={product.slug} />
+     …
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 76 |                 </button>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 77 |               </form>
+     | ^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  78 |             </article>
+  79 |
+  80 |             <article className="rounded-[1.6rem] border border-[var(--line)] bg-[#fbfaf7] p-6">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           react-hooks/error-boundaries
+   44:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:44:17
+  42 |               <h2 className="text-xl font-semibold tracking-[-0.03em] text-[#141413]">Customer details</h2>
+  43 |               <form action="/checkout/actions" className="mt-6 grid gap-4 md:grid-cols-2" method="post">
+> 44 |                 <input name="product_id" type="hidden" value={product.id} />
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  45 |                 <input name="slug" type="hidden" value={product.slug} />
+  46 |
+  47 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react-hooks/error-boundaries
+   45:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:45:17
+  43 |               <form action="/checkout/actions" className="mt-6 grid gap-4 md:grid-cols-2" method="post">
+  44 |                 <input name="product_id" type="hidden" value={product.id} />
+> 45 |                 <input name="slug" type="hidden" value={product.slug} />
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  46 |
+  47 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  48 |                   Full name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    react-hooks/error-boundaries
+   47:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:47:17
+  45 |                 <input name="slug" type="hidden" value={product.slug} />
+  46 |
+> 47 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 48 |                   Full name
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 49 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="Naomi Cole" name="buyer_name" required />
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 50 |                 </label>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  51 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  52 |                   Email
+  53 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="naomi.cole@example.com" name="buyer_email" required type="email" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react-hooks/error-boundaries
+   49:19  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:49:19
+  47 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  48 |                   Full name
+> 49 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="Naomi Cole" name="buyer_name" required />
+     |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  50 |                 </label>
+  51 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  52 |                   Email                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        react-hooks/error-boundaries
+   51:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:51:17
+  49 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="Naomi Cole" name="buyer_name" required />
+  50 |                 </label>
+> 51 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 52 |                   Email
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 53 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="naomi.cole@example.com" name="buyer_email" required type="email" />
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 54 |                 </label>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  55 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  56 |                   Phone
+  57 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="+1:415 555 0198" name="buyer_phone" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/error-boundaries
+   53:19  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:53:19
+  51 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  52 |                   Email
+> 53 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="naomi.cole@example.com" name="buyer_email" required type="email" />
+     |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  54 |                 </label>
+  55 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  56 |                   Phone                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        react-hooks/error-boundaries
+   55:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:55:17
+  53 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="naomi.cole@example.com" name="buyer_email" required type="email" />
+  54 |                 </label>
+> 55 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 56 |                   Phone
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 57 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="+1:415 555 0198" name="buyer_phone" />
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 58 |                 </label>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  59 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  60 |                   Quantity
+  61 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="1" max={Math.max(product.stock_quantity, 1)} min="1" name="quantity" required type="number" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 react-hooks/error-boundaries
+   57:19  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:57:19
+  55 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  56 |                   Phone
+> 57 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="+1:415 555 0198" name="buyer_phone" />
+     |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  58 |                 </label>
+  59 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  60 |                   Quantity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               react-hooks/error-boundaries
+   59:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:59:17
+  57 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="+1:415 555 0198" name="buyer_phone" />
+  58 |                 </label>
+> 59 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 60 |                   Quantity
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 61 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="1" max={Math.max(product.stock_quantity, 1)} min="1" name="quantity" required type="number" />
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 62 |                 </label>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  63 |                 <label className="grid gap-2 text-sm text-[var(--muted)] md:col-span-2">
+  64 |                   Shipping address
+  65 |                   <textarea className="min-h-28 rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="14 Mercer Lane, Brooklyn, NY 11201" name="shipping_address" required />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  react-hooks/error-boundaries
+   61:19  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:61:19
+  59 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  60 |                   Quantity
+> 61 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="1" max={Math.max(product.stock_quantity, 1)} min="1" name="quantity" required type="number" />
+     |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  62 |                 </label>
+  63 |                 <label className="grid gap-2 text-sm text-[var(--muted)] md:col-span-2">
+  64 |                   Shipping address                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      react-hooks/error-boundaries
+   63:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:63:17
+  61 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="1" max={Math.max(product.stock_quantity, 1)} min="1" name="quantity" required type="number" />
+  62 |                 </label>
+> 63 |                 <label className="grid gap-2 text-sm text-[var(--muted)] md:col-span-2">
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 64 |                   Shipping address
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 65 |                   <textarea className="min-h-28 rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="14 Mercer Lane, Brooklyn, NY 11201" name="shipping_address" required />
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 66 |                 </label>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  67 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  68 |                   Card last 4
+  69 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="4242" maxLength={4} minLength={4} name="payment_last4" required />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react-hooks/error-boundaries
+   65:19  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:65:19
+  63 |                 <label className="grid gap-2 text-sm text-[var(--muted)] md:col-span-2">
+  64 |                   Shipping address
+> 65 |                   <textarea className="min-h-28 rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="14 Mercer Lane, Brooklyn, NY 11201" name="shipping_address" required />
+     |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  66 |                 </label>
+  67 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  68 |                   Card last 4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/error-boundaries
+   67:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:67:17
+  65 |                   <textarea className="min-h-28 rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="14 Mercer Lane, Brooklyn, NY 11201" name="shipping_address" required />
+  66 |                 </label>
+> 67 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 68 |                   Card last 4
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 69 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="4242" maxLength={4} minLength={4} name="payment_last4" required />
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 70 |                 </label>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  71 |                 <div className="rounded-[1rem] bg-[#f5efe2] px-4 py-4 text-sm text-[#4f493d]">
+  72 |                   Your payment confirmation and order reference will appear as soon as the order is placed.
+  73 |                 </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react-hooks/error-boundaries
+   69:19  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:69:19
+  67 |                 <label className="grid gap-2 text-sm text-[var(--muted)]">
+  68 |                   Card last 4
+> 69 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="4242" maxLength={4} minLength={4} name="payment_last4" required />
+     |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  70 |                 </label>
+  71 |                 <div className="rounded-[1rem] bg-[#f5efe2] px-4 py-4 text-sm text-[#4f493d]">
+  72 |                   Your payment confirmation and order reference will appear as soon as the order is placed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             react-hooks/error-boundaries
+   71:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:71:17
+  69 |                   <input className="rounded-[1rem] border border-[var(--line)] bg-white px-4 py-3 text-base text-[#121212]" defaultValue="4242" maxLength={4} minLength={4} name="payment_last4" required />
+  70 |                 </label>
+> 71 |                 <div className="rounded-[1rem] bg-[#f5efe2] px-4 py-4 text-sm text-[#4f493d]">
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 72 |                   Your payment confirmation and order reference will appear as soon as the order is placed.
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 73 |                 </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  74 |                 <button className="inline-flex items-center justify-center rounded-full bg-[#111111] px-5 py-3 text-sm font-semibold text-white disabled:opacity-60" disabled={soldOut} type="submit">
+  75 |                   {soldOut ? "Sold out" : "Pay and place order"}
+  76 |                 </button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          react-hooks/error-boundaries
+   74:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:74:17
+  72 |                   Your payment confirmation and order reference will appear as soon as the order is placed.
+  73 |                 </div>
+> 74 |                 <button className="inline-flex items-center justify-center rounded-full bg-[#111111] px-5 py-3 text-sm font-semibold text-white disabled:opacity-60" disabled={soldOut} type="submit">
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 75 |                   {soldOut ? "Sold out" : "Pay and place order"}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 76 |                 </button>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  77 |               </form>
+  78 |             </article>
+  79 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  react-hooks/error-boundaries
+   80:13  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:80:13
+   78 |             </article>
+   79 |
+>  80 |             <article className="rounded-[1.6rem] border border-[var(--line)] bg-[#fbfaf7] p-6">
+      |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  81 |               <h2 className="text-xl font-semibold tracking-[-0.03em] text-[#141413]">Order summary</h2>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  82 |               <div className="mt-6 grid gap-4 rounded-[1.25rem] bg-white p-5">
+      …
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 110 |               </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 111 |             </article>
+      | ^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  112 |           </section>
+  113 |         </div>
+  114 |       </main>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    react-hooks/error-boundaries
+   81:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:81:15
+  79 |
+  80 |             <article className="rounded-[1.6rem] border border-[var(--line)] bg-[#fbfaf7] p-6">
+> 81 |               <h2 className="text-xl font-semibold tracking-[-0.03em] text-[#141413]">Order summary</h2>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  82 |               <div className="mt-6 grid gap-4 rounded-[1.25rem] bg-white p-5">
+  83 |                 <div className="flex items-start justify-between gap-3">
+  84 |                   <div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 react-hooks/error-boundaries
+   82:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:82:15
+   80 |             <article className="rounded-[1.6rem] border border-[var(--line)] bg-[#fbfaf7] p-6">
+   81 |               <h2 className="text-xl font-semibold tracking-[-0.03em] text-[#141413]">Order summary</h2>
+>  82 |               <div className="mt-6 grid gap-4 rounded-[1.25rem] bg-white p-5">
+      |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  83 |                 <div className="flex items-start justify-between gap-3">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  84 |                   <div>
+      …
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 100 |                 ) : null}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 101 |               </div>
+      | ^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  102 |
+  103 |               <div className="mt-6 flex flex-wrap gap-3">
+  104 |                 <Link className="rounded-full border border-[#1f1e1a] px-6 py-3 text-sm font-medium text-[#1f1e1a] transition-colors duration-200 hover:bg-[#1f1e1a] hover:text-white" href={`/products/${product.slug}`}>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       react-hooks/error-boundaries
+   83:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:83:17
+  81 |               <h2 className="text-xl font-semibold tracking-[-0.03em] text-[#141413]">Order summary</h2>
+  82 |               <div className="mt-6 grid gap-4 rounded-[1.25rem] bg-white p-5">
+> 83 |                 <div className="flex items-start justify-between gap-3">
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 84 |                   <div>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 85 |                     <p className="text-lg font-semibold text-[#171615]">{product.name}</p>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 86 |                     <p className="mt-1 text-sm text-[var(--muted)]">{product.description}</p>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 87 |                   </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 88 |                   <span className="text-base font-semibold text-[#171615]">
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 89 |                     {product.currency} {product.price}
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 90 |                   </span>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 91 |                 </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  92 |                 <div className="flex flex-wrap gap-3 text-sm text-[var(--muted)]">
+  93 |                   <span>{product.stock_quantity} remaining before purchase</span>
+  94 |                   <span>{product.sold_quantity} already sold</span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  react-hooks/error-boundaries
+   84:19  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:84:19
+  82 |               <div className="mt-6 grid gap-4 rounded-[1.25rem] bg-white p-5">
+  83 |                 <div className="flex items-start justify-between gap-3">
+> 84 |                   <div>
+     |                   ^^^^^
+> 85 |                     <p className="text-lg font-semibold text-[#171615]">{product.name}</p>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 86 |                     <p className="mt-1 text-sm text-[var(--muted)]">{product.description}</p>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 87 |                   </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  88 |                   <span className="text-base font-semibold text-[#171615]">
+  89 |                     {product.currency} {product.price}
+  90 |                   </span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  react-hooks/error-boundaries
+   85:21  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:85:21
+  83 |                 <div className="flex items-start justify-between gap-3">
+  84 |                   <div>
+> 85 |                     <p className="text-lg font-semibold text-[#171615]">{product.name}</p>
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  86 |                     <p className="mt-1 text-sm text-[var(--muted)]">{product.description}</p>
+  87 |                   </div>
+  88 |                   <span className="text-base font-semibold text-[#171615]">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/error-boundaries
+   86:21  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:86:21
+  84 |                   <div>
+  85 |                     <p className="text-lg font-semibold text-[#171615]">{product.name}</p>
+> 86 |                     <p className="mt-1 text-sm text-[var(--muted)]">{product.description}</p>
+     |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  87 |                   </div>
+  88 |                   <span className="text-base font-semibold text-[#171615]">
+  89 |                     {product.currency} {product.price}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        react-hooks/error-boundaries
+   88:19  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:88:19
+  86 |                     <p className="mt-1 text-sm text-[var(--muted)]">{product.description}</p>
+  87 |                   </div>
+> 88 |                   <span className="text-base font-semibold text-[#171615]">
+     |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 89 |                     {product.currency} {product.price}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 90 |                   </span>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  91 |                 </div>
+  92 |                 <div className="flex flex-wrap gap-3 text-sm text-[var(--muted)]">
+  93 |                   <span>{product.stock_quantity} remaining before purchase</span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/error-boundaries
+   92:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:92:17
+  90 |                   </span>
+  91 |                 </div>
+> 92 |                 <div className="flex flex-wrap gap-3 text-sm text-[var(--muted)]">
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 93 |                   <span>{product.stock_quantity} remaining before purchase</span>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 94 |                   <span>{product.sold_quantity} already sold</span>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 95 |                 </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  96 |                 {query.reference ? (
+  97 |                   <div className="rounded-[1rem] bg-[#eef8f3] px-4 py-4 text-sm text-[#166534]">
+  98 |                     Order confirmed with reference <span className="font-semibold">{query.reference}</span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       react-hooks/error-boundaries
+   93:19  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:93:19
+  91 |                 </div>
+  92 |                 <div className="flex flex-wrap gap-3 text-sm text-[var(--muted)]">
+> 93 |                   <span>{product.stock_quantity} remaining before purchase</span>
+     |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  94 |                   <span>{product.sold_quantity} already sold</span>
+  95 |                 </div>
+  96 |                 {query.reference ? (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react-hooks/error-boundaries
+   94:19  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:94:19
+  92 |                 <div className="flex flex-wrap gap-3 text-sm text-[var(--muted)]">
+  93 |                   <span>{product.stock_quantity} remaining before purchase</span>
+> 94 |                   <span>{product.sold_quantity} already sold</span>
+     |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  95 |                 </div>
+  96 |                 {query.reference ? (
+  97 |                   <div className="rounded-[1rem] bg-[#eef8f3] px-4 py-4 text-sm text-[#166534]">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/error-boundaries
+   97:19  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:97:19
+   95 |                 </div>
+   96 |                 {query.reference ? (
+>  97 |                   <div className="rounded-[1rem] bg-[#eef8f3] px-4 py-4 text-sm text-[#166534]">
+      |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  98 |                     Order confirmed with reference <span className="font-semibold">{query.reference}</span>.
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  99 |                   </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  100 |                 ) : null}
+  101 |               </div>
+  102 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  react-hooks/error-boundaries
+   98:52  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:98:52
+   96 |                 {query.reference ? (
+   97 |                   <div className="rounded-[1rem] bg-[#eef8f3] px-4 py-4 text-sm text-[#166534]">
+>  98 |                     Order confirmed with reference <span className="font-semibold">{query.reference}</span>.
+      |                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+   99 |                   </div>
+  100 |                 ) : null}
+  101 |               </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react-hooks/error-boundaries
+  103:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:103:15
+  101 |               </div>
+  102 |
+> 103 |               <div className="mt-6 flex flex-wrap gap-3">
+      |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 104 |                 <Link className="rounded-full border border-[#1f1e1a] px-6 py-3 text-sm font-medium text-[#1f1e1a] transition-colors duration-200 hover:bg-[#1f1e1a] hover:text-white" href={`/products/${product.slug}`}>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 105 |                   Back to product
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 106 |                 </Link>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 107 |                 <Link className="rounded-full border border-[#1f1e1a] px-6 py-3 text-sm font-medium text-[#1f1e1a] transition-colors duration-200 hover:bg-[#1f1e1a] hover:text-white" href="/market">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 108 |                   Continue shopping
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 109 |                 </Link>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 110 |               </div>
+      | ^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  111 |             </article>
+  112 |           </section>
+  113 |         </div>  react-hooks/error-boundaries
+  104:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:104:17
+  102 |
+  103 |               <div className="mt-6 flex flex-wrap gap-3">
+> 104 |                 <Link className="rounded-full border border-[#1f1e1a] px-6 py-3 text-sm font-medium text-[#1f1e1a] transition-colors duration-200 hover:bg-[#1f1e1a] hover:text-white" href={`/products/${product.slug}`}>
+      |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 105 |                   Back to product
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 106 |                 </Link>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  107 |                 <Link className="rounded-full border border-[#1f1e1a] px-6 py-3 text-sm font-medium text-[#1f1e1a] transition-colors duration-200 hover:bg-[#1f1e1a] hover:text-white" href="/market">
+  108 |                   Continue shopping
+  109 |                 </Link>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react-hooks/error-boundaries
+  107:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/checkout/[slug]/page.tsx:107:17
+  105 |                   Back to product
+  106 |                 </Link>
+> 107 |                 <Link className="rounded-full border border-[#1f1e1a] px-6 py-3 text-sm font-medium text-[#1f1e1a] transition-colors duration-200 hover:bg-[#1f1e1a] hover:text-white" href="/market">
+      |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 108 |                   Continue shopping
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 109 |                 </Link>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  110 |               </div>
+  111 |             </article>
+  112 |           </section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/error-boundaries
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx
+  24:7   error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:24:7
+  22 |
+  23 |     return (
+> 24 |       <main className="min-h-screen bg-[var(--page-wash)] px-4 py-6 md:px-8 md:py-10">
+     |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 25 |         <div className="mx-auto max-w-[88rem] rounded-[2.2rem] bg-[var(--surface)] px-6 py-6 shadow-[0_30px_90px_rgba(88,71,14,0.08)] md:px-10 md:py-8 xl:px-14 xl:py-10">
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 26 |           <header className="flex flex-col gap-4 border-b border-[var(--line)] pb-8 md:flex-row md:items-end md:justify-between">
+     …
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 85 |         </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 86 |       </main>
+     | ^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  87 |     );
+  88 |   } catch {
+  89 |     notFound();                                                                                                                                                                                                                                                                                                                                                                                                  react-hooks/error-boundaries
+  25:9   error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:25:9
+  23 |     return (
+  24 |       <main className="min-h-screen bg-[var(--page-wash)] px-4 py-6 md:px-8 md:py-10">
+> 25 |         <div className="mx-auto max-w-[88rem] rounded-[2.2rem] bg-[var(--surface)] px-6 py-6 shadow-[0_30px_90px_rgba(88,71,14,0.08)] md:px-10 md:py-8 xl:px-14 xl:py-10">
+     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 26 |           <header className="flex flex-col gap-4 border-b border-[var(--line)] pb-8 md:flex-row md:items-end md:justify-between">
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 27 |             <div>
+     …
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 84 |           </section>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 85 |         </div>
+     | ^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  86 |       </main>
+  87 |     );
+  88 |   } catch {                                                                                                                                                                                                                                                                                                                                                                                                                 react-hooks/error-boundaries
+  26:11  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:26:11
+  24 |       <main className="min-h-screen bg-[var(--page-wash)] px-4 py-6 md:px-8 md:py-10">
+  25 |         <div className="mx-auto max-w-[88rem] rounded-[2.2rem] bg-[var(--surface)] px-6 py-6 shadow-[0_30px_90px_rgba(88,71,14,0.08)] md:px-10 md:py-8 xl:px-14 xl:py-10">
+> 26 |           <header className="flex flex-col gap-4 border-b border-[var(--line)] pb-8 md:flex-row md:items-end md:justify-between">
+     |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 27 |             <div>
+     | ^^^^^^^^^^^^^^^^^
+> 28 |               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#907314]">Product Details</p>
+     …
+     | ^^^^^^^^^^^^^^^^^
+> 35 |             <SiteNav current="product" user={user} />
+     | ^^^^^^^^^^^^^^^^^
+> 36 |           </header>
+     | ^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  37 |
+  38 |           <section className="grid gap-8 py-10 lg:grid-cols-[1.05fr_0.95fr]">
+  39 |             <div className="product-tile min-h-[28rem]">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react-hooks/error-boundaries
+  27:13  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:27:13
+  25 |         <div className="mx-auto max-w-[88rem] rounded-[2.2rem] bg-[var(--surface)] px-6 py-6 shadow-[0_30px_90px_rgba(88,71,14,0.08)] md:px-10 md:py-8 xl:px-14 xl:py-10">
+  26 |           <header className="flex flex-col gap-4 border-b border-[var(--line)] pb-8 md:flex-row md:items-end md:justify-between">
+> 27 |             <div>
+     |             ^^^^^
+> 28 |               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#907314]">Product Details</p>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 29 |               <h1 className="mt-3 max-w-3xl text-[2rem] font-semibold leading-[1.05] tracking-[-0.05em] text-[#141413] md:text-[3rem]">
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 30 |                 {product.name}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 31 |               </h1>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 32 |               <p className="mt-4 max-w-2xl text-sm leading-7 text-[var(--muted)] md:text-base">{product.description}</p>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 33 |             </div>
+     | ^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  34 |
+  35 |             <SiteNav current="product" user={user} />
+  36 |           </header>  react-hooks/error-boundaries
+  28:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:28:15
+  26 |           <header className="flex flex-col gap-4 border-b border-[var(--line)] pb-8 md:flex-row md:items-end md:justify-between">
+  27 |             <div>
+> 28 |               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#907314]">Product Details</p>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  29 |               <h1 className="mt-3 max-w-3xl text-[2rem] font-semibold leading-[1.05] tracking-[-0.05em] text-[#141413] md:text-[3rem]">
+  30 |                 {product.name}
+  31 |               </h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react-hooks/error-boundaries
+  29:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:29:15
+  27 |             <div>
+  28 |               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#907314]">Product Details</p>
+> 29 |               <h1 className="mt-3 max-w-3xl text-[2rem] font-semibold leading-[1.05] tracking-[-0.05em] text-[#141413] md:text-[3rem]">
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 30 |                 {product.name}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 31 |               </h1>
+     | ^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  32 |               <p className="mt-4 max-w-2xl text-sm leading-7 text-[var(--muted)] md:text-base">{product.description}</p>
+  33 |             </div>
+  34 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react-hooks/error-boundaries
+  32:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:32:15
+  30 |                 {product.name}
+  31 |               </h1>
+> 32 |               <p className="mt-4 max-w-2xl text-sm leading-7 text-[var(--muted)] md:text-base">{product.description}</p>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  33 |             </div>
+  34 |
+  35 |             <SiteNav current="product" user={user} />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          react-hooks/error-boundaries
+  35:13  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:35:13
+  33 |             </div>
+  34 |
+> 35 |             <SiteNav current="product" user={user} />
+     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  36 |           </header>
+  37 |
+  38 |           <section className="grid gap-8 py-10 lg:grid-cols-[1.05fr_0.95fr]">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       react-hooks/error-boundaries
+  38:11  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:38:11
+  36 |           </header>
+  37 |
+> 38 |           <section className="grid gap-8 py-10 lg:grid-cols-[1.05fr_0.95fr]">
+     |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 39 |             <div className="product-tile min-h-[28rem]">
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 40 |               {imageSrc ? (
+     …
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 83 |             </article>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 84 |           </section>
+     | ^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  85 |         </div>
+  86 |       </main>
+  87 |     );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react-hooks/error-boundaries
+  39:13  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:39:13
+  37 |
+  38 |           <section className="grid gap-8 py-10 lg:grid-cols-[1.05fr_0.95fr]">
+> 39 |             <div className="product-tile min-h-[28rem]">
+     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 40 |               {imageSrc ? (
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 41 |                 <Image
+     …
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 51 |               )}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 52 |             </div>
+     | ^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  53 |
+  54 |             <article className="rounded-[1.6rem] border border-[var(--line)] bg-[#fbfaf7] p-6">
+  55 |               <p className="text-3xl font-semibold tracking-[-0.04em] text-[#171615]">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react-hooks/error-boundaries
+  41:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:41:17
+  39 |             <div className="product-tile min-h-[28rem]">
+  40 |               {imageSrc ? (
+> 41 |                 <Image
+     |                 ^^^^^^
+> 42 |                   alt={product.name}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 43 |                   className="product-image h-full"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 44 |                   fill
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 45 |                   sizes="(min-width: 1024px) 52vw, 92vw"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 46 |                   src={imageSrc}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 47 |                   unoptimized
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 48 |                 />
+     | ^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  49 |               ) : (
+  50 |                 <div className="flex h-[28rem] items-center justify-center text-sm text-[var(--muted)]">No image</div>
+  51 |               )}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           react-hooks/error-boundaries
+  50:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:50:17
+  48 |                 />
+  49 |               ) : (
+> 50 |                 <div className="flex h-[28rem] items-center justify-center text-sm text-[var(--muted)]">No image</div>
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  51 |               )}
+  52 |             </div>
+  53 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               react-hooks/error-boundaries
+  54:13  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:54:13
+  52 |             </div>
+  53 |
+> 54 |             <article className="rounded-[1.6rem] border border-[var(--line)] bg-[#fbfaf7] p-6">
+     |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 55 |               <p className="text-3xl font-semibold tracking-[-0.04em] text-[#171615]">
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 56 |                 {product.currency} {product.price}
+     …
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 82 |               </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 83 |             </article>
+     | ^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  84 |           </section>
+  85 |         </div>
+  86 |       </main>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 react-hooks/error-boundaries
+  55:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:55:15
+  53 |
+  54 |             <article className="rounded-[1.6rem] border border-[var(--line)] bg-[#fbfaf7] p-6">
+> 55 |               <p className="text-3xl font-semibold tracking-[-0.04em] text-[#171615]">
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 56 |                 {product.currency} {product.price}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 57 |               </p>
+     | ^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  58 |               <div className="mt-5 grid gap-3 text-sm text-[var(--muted)]">
+  59 |                 <p>{product.sold_quantity} units sold</p>
+  60 |                 <p>{product.stock_quantity} currently available</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       react-hooks/error-boundaries
+  58:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:58:15
+  56 |                 {product.currency} {product.price}
+  57 |               </p>
+> 58 |               <div className="mt-5 grid gap-3 text-sm text-[var(--muted)]">
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 59 |                 <p>{product.sold_quantity} units sold</p>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 60 |                 <p>{product.stock_quantity} currently available</p>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 61 |                 <p>SKU: {product.sku}</p>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 62 |               </div>
+     | ^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  63 |
+  64 |               <div className="mt-6 rounded-[1.25rem] bg-[#f5efe2] p-4 text-sm text-[#4f493d]">
+  65 |                 {soldOut                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/error-boundaries
+  59:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:59:17
+  57 |               </p>
+  58 |               <div className="mt-5 grid gap-3 text-sm text-[var(--muted)]">
+> 59 |                 <p>{product.sold_quantity} units sold</p>
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  60 |                 <p>{product.stock_quantity} currently available</p>
+  61 |                 <p>SKU: {product.sku}</p>
+  62 |               </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  react-hooks/error-boundaries
+  60:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:60:17
+  58 |               <div className="mt-5 grid gap-3 text-sm text-[var(--muted)]">
+  59 |                 <p>{product.sold_quantity} units sold</p>
+> 60 |                 <p>{product.stock_quantity} currently available</p>
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  61 |                 <p>SKU: {product.sku}</p>
+  62 |               </div>
+  63 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           react-hooks/error-boundaries
+  61:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:61:17
+  59 |                 <p>{product.sold_quantity} units sold</p>
+  60 |                 <p>{product.stock_quantity} currently available</p>
+> 61 |                 <p>SKU: {product.sku}</p>
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  62 |               </div>
+  63 |
+  64 |               <div className="mt-6 rounded-[1.25rem] bg-[#f5efe2] p-4 text-sm text-[#4f493d]">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  react-hooks/error-boundaries
+  64:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:64:15
+  62 |               </div>
+  63 |
+> 64 |               <div className="mt-6 rounded-[1.25rem] bg-[#f5efe2] p-4 text-sm text-[#4f493d]">
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 65 |                 {soldOut
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 66 |                   ? "This item is sold out and checkout is disabled until the vendor restocks it."
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 67 |                   : "Secure checkout lets you confirm your order details, complete your purchase, and receive an instant order confirmation."}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^
+> 68 |               </div>
+     | ^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  69 |
+  70 |               <div className="mt-6 flex flex-wrap gap-3">
+  71 |                 <Link className="rounded-full border border-[#1f1e1a] px-6 py-3 text-sm font-medium text-[#1f1e1a] transition-colors duration-200 hover:bg-[#1f1e1a] hover:text-white" href="/market">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           react-hooks/error-boundaries
+  70:15  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:70:15
+  68 |               </div>
+  69 |
+> 70 |               <div className="mt-6 flex flex-wrap gap-3">
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 71 |                 <Link className="rounded-full border border-[#1f1e1a] px-6 py-3 text-sm font-medium text-[#1f1e1a] transition-colors duration-200 hover:bg-[#1f1e1a] hover:text-white" href="/market">
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 72 |                   Back to market
+     …
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 81 |                 </Link>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 82 |               </div>
+     | ^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  83 |             </article>
+  84 |           </section>
+  85 |         </div>                                                                                                                                                                                                                                                                                                                                                                                     react-hooks/error-boundaries
+  71:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:71:17
+  69 |
+  70 |               <div className="mt-6 flex flex-wrap gap-3">
+> 71 |                 <Link className="rounded-full border border-[#1f1e1a] px-6 py-3 text-sm font-medium text-[#1f1e1a] transition-colors duration-200 hover:bg-[#1f1e1a] hover:text-white" href="/market">
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 72 |                   Back to market
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 73 |                 </Link>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  74 |                 <Link
+  75 |                   className={`rounded-full px-6 py-3 text-sm font-medium text-white transition-colors duration-200 ${
+  76 |                     soldOut ? "pointer-events-none bg-[#b8b3aa]" : "bg-[#0f5b43] hover:bg-[#0b4b37]"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react-hooks/error-boundaries
+  74:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+/home/azureuser/netiks_store/apps/web/src/app/products/[slug]/page.tsx:74:17
+  72 |                   Back to market
+  73 |                 </Link>
+> 74 |                 <Link
+     |                 ^^^^^
+> 75 |                   className={`rounded-full px-6 py-3 text-sm font-medium text-white transition-colors duration-200 ${
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 76 |                     soldOut ? "pointer-events-none bg-[#b8b3aa]" : "bg-[#0f5b43] hover:bg-[#0b4b37]"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 77 |                   }`}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 78 |                   href={`/checkout/${product.slug}`}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 79 |                 >
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 80 |                   {soldOut ? "Sold out" : "Buy this product"}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 81 |                 </Link>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  82 |               </div>
+  83 |             </article>
+  84 |           </section>                                                                                                                                     react-hooks/error-boundaries
+
+✖ 66 problems (66 errors, 0 warnings)
+
+npm error Lifecycle script `lint` failed with error:
+npm error code 1
+npm error path /home/azureuser/netiks_store/apps/web
+npm error workspace @netiks-store/web@0.1.0
+npm error location /home/azureuser/netiks_store/apps/web
+npm error command failed
+npm error command sh -c eslint

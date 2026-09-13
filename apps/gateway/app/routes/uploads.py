@@ -1,9 +1,8 @@
-from fastapi import APIRouter, File, Header, HTTPException, UploadFile, status
-from fastapi.responses import JSONResponse
 import httpx
-
 from app.config import Settings
 from app.deps import get_user_context
+from fastapi import APIRouter, File, Header, HTTPException, UploadFile
+from fastapi.responses import JSONResponse
 
 router = APIRouter(tags=["uploads"])
 settings = Settings()

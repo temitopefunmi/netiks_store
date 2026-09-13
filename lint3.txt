@@ -1,0 +1,8 @@
+
+> netiks-store@0.1.0 lint:web
+> npm run lint --workspace @netiks-store/web
+
+
+> @netiks-store/web@0.1.0 lint
+> eslint
+

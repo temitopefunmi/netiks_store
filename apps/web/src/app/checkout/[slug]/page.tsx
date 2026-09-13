@@ -14,10 +14,13 @@ export default async function CheckoutPage({ params, searchParams }: CheckoutPag
   const { slug } = await params;
   const query = await searchParams;
   const { user } = await getViewer();
-
+  let product;
   try {
     const response = await fetchProduct(slug);
-    const product = response.data;
+    product = response.data;
+   } catch {
+    notFound();
+   }
     const soldOut = product.stock_quantity <= 0;
 
     return (
@@ -113,7 +116,5 @@ export default async function CheckoutPage({ params, searchParams }: CheckoutPag
         </div>
       </main>
     );
-  } catch {
-    notFound();
-  }
+
 }

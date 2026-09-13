@@ -13,10 +13,13 @@ type ProductDetailsPageProps = {
 export default async function ProductDetailsPage({ params }: ProductDetailsPageProps) {
   const { slug } = await params;
   const { user } = await getViewer();
-
+  let product;
   try {
     const response = await fetchProduct(slug);
-    const product = response.data;
+    product = response.data;
+    } catch {
+      notFound();
+    }
     const soldOut = product.stock_quantity <= 0;
     const imageSrc = resolveMediaUrl(product.featured_image_url);
 
@@ -85,7 +88,5 @@ export default async function ProductDetailsPage({ params }: ProductDetailsPageP
         </div>
       </main>
     );
-  } catch {
-    notFound();
-  }
+ 
 }
