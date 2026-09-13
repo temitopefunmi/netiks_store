@@ -1,0 +1,131 @@
+name: Build and Push Containers
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Install Python dependencies
+        run: uv sync
+
+      - name: Ruff lint
+        run: uv run ruff check .
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Web lint
+        run: npm run lint:web
+
+      - name: Validate Docker Compose
+        run: docker compose config
+
+  build:
+    needs: validate
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      id-token: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        service:
+          - web
+          - gateway
+          - identity-service
+          - vendor-service
+          - catalog-service
+          - media-service
+          - admin-service
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Login to ACR
+        run: |
+          echo "${{ vars.ACR_LOGIN_SERVER }}" | \
+          sed 's/.azurecr.io//' | \
+          xargs az acr login --name
+
+      - name: Build and Push image
+        run: |
+          SHORT_SHA=${GITHUB_SHA::7}
+
+          case "${{ matrix.service }}" in
+            web)
+              DOCKERFILE="infra/docker/web.Dockerfile"
+              ;;
+            gateway)
+              DOCKERFILE="apps/gateway/Dockerfile"
+              ;;
+            identity-service)
+              DOCKERFILE="services/identity-service/Dockerfile"
+              ;;
+            vendor-service)
+              DOCKERFILE="services/vendor-service/Dockerfile"
+              ;;
+            catalog-service)
+              DOCKERFILE="services/catalog-service/Dockerfile"
+              ;;
+            media-service)
+              DOCKERFILE="services/media-service/Dockerfile"
+              ;;
+            admin-service)
+              DOCKERFILE="services/admin-service/Dockerfile"
+              ;;
+          esac
+
+          IMAGE="${{ vars.ACR_LOGIN_SERVER }}/${{ matrix.service }}"
+
+          docker build \
+            -f "$DOCKERFILE" \
+            -t "$IMAGE:$SHORT_SHA" \
+            .
+
+          docker push "$IMAGE:$SHORT_SHA"
+
+          if [[ "${GITHUB_REF}" == refs/tags/v* ]]; then
+            VERSION=${GITHUB_REF#refs/tags/}
+
+            docker tag "$IMAGE:$SHORT_SHA" "$IMAGE:$VERSION"
+            docker tag "$IMAGE:$SHORT_SHA" "$IMAGE:latest"
+
+            docker push "$IMAGE:$VERSION"
+            docker push "$IMAGE:latest"
+          fi
+
