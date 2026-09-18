@@ -1,6 +1,6 @@
 services:
   web:
-    image: temnetiksstoreregistry.azurecr.io/netiks-store/web:v1.1.1
+    image: temnetiksstoreregistry.azurecr.io/netiks-store/web:v1.2.0
 
   gateway:
     image: temnetiksstoreregistry.azurecr.io/netiks-store/gateway:v1.0.0
