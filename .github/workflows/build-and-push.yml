@@ -80,7 +80,8 @@ jobs:
           subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
 
       - name: Login to ACR
-        env: ACR_LOGIN_SERVER: ${{ vars.ACR_LOGIN_SERVER }}
+        env: 
+          ACR_LOGIN_SERVER: ${{ vars.ACR_LOGIN_SERVER }}
         run: az acr login --name "${ACR_LOGIN_SERVER%%.*}"
 
       - name: Build and Push image
