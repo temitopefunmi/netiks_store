@@ -137,6 +137,48 @@ jobs:
             docker push "$IMAGE:latest"
           fi
 
+  deploy-staging:
+    needs: build
+
+    if: github.ref == 'refs/heads/main'
+
+    runs-on: ubuntu-latest
+    environment: staging
+
+    steps:
+      - name: Deploy to staging
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+
+          script: |
+            set -e
+
+            cd /home/deploy/netiks_store-staging
+
+            git fetch origin main
+            git checkout --force main
+            git reset --hard origin/main
+
+            export IMAGE_TAG="$(echo '${{ github.sha }}' | cut -c1-7)"
+            export REGISTRY="${{ vars.ACR_LOGIN_SERVER }}"
+
+            docker compose \
+              -p netiks_staging \
+              -f docker-compose.yml \
+              -f docker-compose.staging.yml \
+              pull
+
+            docker compose \
+              -p netiks_staging \
+              -f docker-compose.yml \
+              -f docker-compose.staging.yml \
+              up -d
+
+            docker compose -p netiks_staging ps
+
   deploy:
     needs: build
 
@@ -157,7 +199,7 @@ jobs:
           script: |
             set -e
 
-            cd ~/netiks_store
+            cd /home/deploy/netiks_store
 
             VERSION="${{ inputs.version || github.ref_name }}"
 
