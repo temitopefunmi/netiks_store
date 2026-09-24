@@ -3,19 +3,19 @@ services:
     image: temnetiksstoreregistry.azurecr.io/netiks-store/web:v1.2.2
 
   gateway:
-    image: temnetiksstoreregistry.azurecr.io/netiks-store/gateway:v1.0.0
+    image: temnetiksstoreregistry.azurecr.io/netiks-store/gateway:v1.2.2
 
   identity-service:
-    image: temnetiksstoreregistry.azurecr.io/netiks-store/identity-service:v1.0.0
+    image: temnetiksstoreregistry.azurecr.io/netiks-store/identity-service:v1.2.2
 
   vendor-service:
-    image: temnetiksstoreregistry.azurecr.io/netiks-store/vendor-service:v1.0.0
+    image: temnetiksstoreregistry.azurecr.io/netiks-store/vendor-service:v1.2.2
 
   catalog-service:
-    image: temnetiksstoreregistry.azurecr.io/netiks-store/catalog-service:v1.0.0
+    image: temnetiksstoreregistry.azurecr.io/netiks-store/catalog-service:v1.2.2
 
   media-service:
-    image: temnetiksstoreregistry.azurecr.io/netiks-store/media-service:v1.0.0
+    image: temnetiksstoreregistry.azurecr.io/netiks-store/media-service:v1.2.2
 
   admin-service:
-    image: temnetiksstoreregistry.azurecr.io/netiks-store/admin-service:v1.0.0
+    image: temnetiksstoreregistry.azurecr.io/netiks-store/admin-service:v1.2.2
